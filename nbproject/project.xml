@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <!-- Do not use Project Properties customizer when editing this file manually. 
+ To prevent the customizer from showing, create nbproject/project.properties file and enter 
+auxiliary.show.customizer=false 
+property there. Adding 
+auxiliary.show.customizer.message=<message>
+ will show your customized message when someone attempts to open the customizer.  -->
+            <name>beanshell-upstream</name>
+            <properties/>
+            <folders>
+                <source-folder>
+                    <label>asm/src</label>
+                    <type>java</type>
+                    <location>asm/src</location>
+                </source-folder>
+                <source-folder>
+                    <label>bsf/src</label>
+                    <type>java</type>
+                    <location>bsf/src</location>
+                </source-folder>
+                <source-folder>
+                    <label>engine/javax-src</label>
+                    <type>java</type>
+                    <location>engine/javax-src</location>
+                </source-folder>
+                <source-folder>
+                    <label>engine/src</label>
+                    <type>java</type>
+                    <location>engine/src</location>
+                </source-folder>
+                <source-folder>
+                    <label>src</label>
+                    <type>java</type>
+                    <location>src</location>
+                </source-folder>
+                <source-folder>
+                    <label>tests/junitTests/src</label>
+                    <type>java</type>
+                    <location>tests/junitTests/src</location>
+                </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="build">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>compile</target>
+                </action>
+                <action name="clean">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>clean</target>
+                </action>
+                <action name="javadoc">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>javadoc</target>
+                </action>
+                <action name="test">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>test</target>
+                </action>
+                <action name="rebuild">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>clean</target>
+                    <target>compile</target>
+                </action>
+            </ide-actions>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>asm/src</label>
+                        <location>asm/src</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>bsf/src</label>
+                        <location>bsf/src</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>engine/javax-src</label>
+                        <location>engine/javax-src</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>engine/src</label>
+                        <location>engine/src</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>src</label>
+                        <location>src</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>tests/junitTests/src</label>
+                        <location>tests/junitTests/src</location>
+                    </source-folder>
+                    <source-file>
+                        <location>build.xml</location>
+                    </source-file>
+                </items>
+                <context-menu>
+                    <ide-action name="build"/>
+                    <ide-action name="rebuild"/>
+                    <ide-action name="clean"/>
+                    <ide-action name="javadoc"/>
+                    <ide-action name="test"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/2">
+            <compilation-unit>
+                <package-root>asm/src</package-root>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+            <compilation-unit>
+                <package-root>bsf/src</package-root>
+                <classpath mode="compile">lib/bsf.jar:classes</classpath>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+            <compilation-unit>
+                <package-root>engine/javax-src</package-root>
+                <classpath mode="compile">lib/servlet.jar</classpath>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+            <compilation-unit>
+                <package-root>engine/src</package-root>
+                <classpath mode="compile">classes</classpath>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+            <compilation-unit>
+                <package-root>src</package-root>
+                <classpath mode="compile">lib/servlet.jar:classes</classpath>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+            <compilation-unit>
+                <package-root>tests/junitTests/src</package-root>
+                <unit-tests/>
+                <classpath mode="compile">lib/junit-4.8.2.jar:classes</classpath>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+        </java-data>
+    </configuration>
+</project>

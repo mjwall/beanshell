@@ -124,7 +124,7 @@ public class ScriptEngineManager  {
                     // continue the loop...
                 }
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             // getResources call failed.
             if (DEBUG) e.printStackTrace();
         }

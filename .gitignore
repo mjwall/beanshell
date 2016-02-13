@@ -2,3 +2,5 @@ classes
 dist
 javadoc
 docs/manual/bshcommands-bshdoc.xml
+tests/junit-reports
+nbproject/private
